@@ -12,7 +12,6 @@ tasks:
         pipenv install;
         psql -U gitpod -c 'CREATE DATABASE pokerswap;';
         psql -U gitpod -c 'CREATE EXTENSION unaccent;' -d pokerswap;
-        pipenv run init;
       command:
         pipenv install;
         pipenv run upgrade;
